@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+  /* font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0; */
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  /* height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.App {
+    font-family: 'Arial', sans-serif;
+    text-align:left;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Add additional styling for form elements as needed */
+  form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  /* Style form fields */
+  input,
+  select,
+  textarea,
+  button {
+    margin: 10px auto;  /* Center the button horizontally */
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+}
+  
+  /* Style submit button */
+  button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Add more specific styling based on your UI library or design preferences */
+  /* styles.css */
+
+/* Optional: Adjust styling based on your design preferences */
+.form-label {
+    font-weight: bold;
+    position: relative;
+    left: 20px; 
+    
+    
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-label {
+    margin-right: 10px;
+  }
+  
+  /* Optional: Customize the primary button color */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
