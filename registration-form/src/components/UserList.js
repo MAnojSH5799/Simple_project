@@ -146,7 +146,7 @@ const [resetPasswordUser, setResetPasswordUser] = useState(null);
 const [newPassword, setNewPassword] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:2410/allusers') 
+    axios.get('https://simple-app-ari4.onrender.com/allusers') 
       .then(response => {
         console.log(response.data);
         setUsers(response.data);
@@ -168,7 +168,7 @@ const [newPassword, setNewPassword] = useState('');
 
   const handleSaveEdit = (editedUser) => {
     console.log('Save edited user:', editedUser);
-    const apiUrl = `http://localhost:2410/updateuser/${editedUser.id}`;
+    const apiUrl = `https://simple-app-ari4.onrender.com/updateuser/${editedUser.id}`;
     axios.put(apiUrl, editedUser)
       .then(response => {
         console.log('User updated successfully:', response.data);
@@ -182,7 +182,7 @@ const [newPassword, setNewPassword] = useState('');
   };
   const handleDelete = (user) => {
     console.log('Delete user:', user);
-    axios.delete(`http://localhost:2410/deleteuser/${user.id}`) 
+    axios.delete(`https://simple-app-ari4.onrender.com/deleteuser/${user.id}`) 
       .then(response => {
         console.log('User deleted successfully:', user);
         alert('User deleted successfully');
@@ -204,7 +204,7 @@ const [newPassword, setNewPassword] = useState('');
       console.error('New password cannot be empty');
       return;
     }
-    const apiUrl = `http://localhost:2410/updatepassword/${resetPasswordUser.id}`;
+    const apiUrl = `https://simple-app-ari4.onrender.com/updatepassword/${resetPasswordUser.id}`;
     axios
       .put(apiUrl, { password: newPassword })
       .then((response) => {

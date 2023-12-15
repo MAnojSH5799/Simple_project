@@ -84,7 +84,7 @@ const RegistrationForm = () => {
   
   
     try {
-      const response = await axios.post(`http://localhost:2410/postusers`, formData, {
+      const response = await axios.post(`https://simple-app-ari4.onrender.com/postusers`, formData, {
         headers: {
           'Content-Type': 'application/json',
         },

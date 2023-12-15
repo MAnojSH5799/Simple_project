@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.get('http://localhost:2410/userdata');
+      const response = await axios.get('https://simple-app-ari4.onrender.com/userdata');
       const users = response.data;
       const user = users.find(u => u.email === email);
 
@@ -43,7 +43,7 @@ const Login = () => {
     }
     console.log(obj);
     try {
-      const response = await axios.put('http://localhost:2410/resetpassword',obj );
+      const response = await axios.put('https://simple-app-ari4.onrender.com/resetpassword',obj );
   
     console.log("line 51",response.data);
 
